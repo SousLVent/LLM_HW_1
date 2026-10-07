@@ -1,6 +1,6 @@
 {
   "config": {
-    "out_dir": "/home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint",
+    "out_dir": "results/shakespeare_char_baseline_20261004/checkpoint",
     "eval_interval": 250,
     "log_interval": 10,
     "eval_iters": 200,
@@ -65,9 +65,9 @@
     "val.bin": "d37d30cc0c8327c270d493299c3dca54135f6d5f1c9ef60cda78076e311204b1",
     "meta.pkl": "6ee5a37533af83b67fcbe6b93705fde9e15e78bafe895f54b2cb2cb32534526c"
   },
-  "artifact_directory": "/home/bohanli/Desktop/NanoGPT/nanoGPT-master/Mini-LLM Exercise/results/shakespeare_char_baseline_20261004",
-  "checkpoint_path": "/home/bohanli/Desktop/NanoGPT/nanoGPT-master/Mini-LLM Exercise/results/shakespeare_char_baseline_20261004/checkpoint/ckpt.pt",
-  "plotting_script": "/home/bohanli/Desktop/NanoGPT/nanoGPT-master/Mini-LLM Exercise/plot_training_loss.py",
+  "artifact_directory": "Mini-LLM Exercise/results/shakespeare_char_baseline_20261004",
+  "checkpoint_path": "Mini-LLM Exercise/results/shakespeare_char_baseline_20261004/checkpoint/ckpt.pt",
+  "plotting_script": "Mini-LLM Exercise/plot_training_loss.py",
   "reproduce_command": "python3 -u -B train.py config/train_shakespeare_char.py '--out_dir=Mini-LLM Exercise/results/shakespeare_char_baseline_20261004/checkpoint'",
   "plot_command": "python3 -B 'Mini-LLM Exercise/plot_training_loss.py' 'Mini-LLM Exercise/results/shakespeare_char_baseline_20261004/train.log'"
 }

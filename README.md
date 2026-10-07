@@ -12,7 +12,7 @@ The five exercises cover the baseline, RMSNorm, parameter-matched SwiGLU, positi
 
 ## Included files
 
-This repository includes source code, configuration files, tests, source snapshots, training logs, numerical results, plots, and the LaTeX/PDF report. Generated datasets, model checkpoints, installed dependencies, and temporary build files are excluded. Checkpoint paths in the original experiment records refer to local artifacts; they are retained for provenance and are not repository downloads.
+This repository includes source code, configuration files, tests, source snapshots, training logs, numerical results, plots, and the LaTeX/PDF report. Generated datasets, model checkpoints, installed dependencies, and temporary build files are excluded. Paths in published logs and metadata are relative to the project root. Checkpoint paths refer to local artifacts and are not repository downloads.
 
 The original MIT license and upstream credits are preserved.
 

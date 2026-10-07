@@ -18,8 +18,6 @@ build/
 *.fdb_latexmk
 *.synctex.gz
 
-# Local publishing helpers and credentials
-.publish-tools/
-github_upload/
+# Local credentials
 .env
 .env.*

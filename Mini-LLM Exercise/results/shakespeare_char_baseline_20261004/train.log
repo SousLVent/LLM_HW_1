@@ -39,10 +39,10 @@ warmup_iters = 100 # not super necessary potentially
 
 Overriding: out_dir = results/shakespeare_char_baseline_20261004/checkpoint
 tokens per iteration will be: 16,384
-found vocab_size = 65 (inside /home/bohanli/Desktop/NanoGPT/nanoGPT-master/data/shakespeare_char/meta.pkl)
+found vocab_size = 65 (inside data/shakespeare_char/meta.pkl)
 Initializing a new model from scratch
 number of parameters: 10.65M
-/home/bohanli/Desktop/NanoGPT/nanoGPT-master/train.py:207: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+train.py:207: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
 num decayed parameter tensors: 26, with 10,740,096 parameters
 num non-decayed parameter tensors: 13, with 4,992 parameters
@@ -75,7 +75,7 @@ iter 220: loss 2.1453, time 14.16ms, mfu 27.00%
 iter 230: loss 2.0786, time 14.37ms, mfu 26.90%
 iter 240: loss 2.0778, time 13.54ms, mfu 26.96%
 step 250: train loss 1.9689, val loss 2.0675
-saving checkpoint to /home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint
+saving checkpoint to results/shakespeare_char_baseline_20261004/checkpoint
 iter 250: loss 2.0344, time 2112.37ms, mfu 24.28%
 iter 260: loss 1.9877, time 13.73ms, mfu 24.57%
 iter 270: loss 1.9826, time 13.58ms, mfu 24.85%
@@ -102,7 +102,7 @@ iter 470: loss 1.6387, time 14.63ms, mfu 26.40%
 iter 480: loss 1.6183, time 14.26ms, mfu 26.37%
 iter 490: loss 1.6025, time 14.06ms, mfu 26.38%
 step 500: train loss 1.5225, val loss 1.7251
-saving checkpoint to /home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint
+saving checkpoint to results/shakespeare_char_baseline_20261004/checkpoint
 iter 500: loss 1.5959, time 2286.36ms, mfu 23.76%
 iter 510: loss 1.6067, time 13.51ms, mfu 24.14%
 iter 520: loss 1.5871, time 13.61ms, mfu 24.47%
@@ -129,7 +129,7 @@ iter 720: loss 1.4350, time 14.05ms, mfu 26.46%
 iter 730: loss 1.4224, time 14.06ms, mfu 26.46%
 iter 740: loss 1.4201, time 13.56ms, mfu 26.57%
 step 750: train loss 1.3585, val loss 1.5843
-saving checkpoint to /home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint
+saving checkpoint to results/shakespeare_char_baseline_20261004/checkpoint
 iter 750: loss 1.4234, time 2303.46ms, mfu 23.93%
 iter 760: loss 1.4462, time 13.99ms, mfu 24.20%
 iter 770: loss 1.4272, time 13.54ms, mfu 24.53%
@@ -156,7 +156,7 @@ iter 970: loss 1.3479, time 13.59ms, mfu 26.61%
 iter 980: loss 1.3560, time 14.31ms, mfu 26.55%
 iter 990: loss 1.3324, time 14.00ms, mfu 26.56%
 step 1000: train loss 1.2696, val loss 1.5145
-saving checkpoint to /home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint
+saving checkpoint to results/shakespeare_char_baseline_20261004/checkpoint
 iter 1000: loss 1.3273, time 2290.20ms, mfu 23.92%
 iter 1010: loss 1.3375, time 13.57ms, mfu 24.27%
 iter 1020: loss 1.3087, time 13.60ms, mfu 24.58%
@@ -183,7 +183,7 @@ iter 1220: loss 1.3040, time 14.08ms, mfu 26.54%
 iter 1230: loss 1.3001, time 14.05ms, mfu 26.53%
 iter 1240: loss 1.2984, time 13.57ms, mfu 26.63%
 step 1250: train loss 1.2053, val loss 1.4919
-saving checkpoint to /home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint
+saving checkpoint to results/shakespeare_char_baseline_20261004/checkpoint
 iter 1250: loss 1.2703, time 2297.50ms, mfu 23.98%
 iter 1260: loss 1.2831, time 14.59ms, mfu 24.14%
 iter 1270: loss 1.2623, time 13.95ms, mfu 24.39%
@@ -210,7 +210,7 @@ iter 1470: loss 1.2174, time 13.72ms, mfu 26.63%
 iter 1480: loss 1.2178, time 13.53ms, mfu 26.73%
 iter 1490: loss 1.2374, time 13.59ms, mfu 26.80%
 step 1500: train loss 1.1502, val loss 1.4721
-saving checkpoint to /home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint
+saving checkpoint to results/shakespeare_char_baseline_20261004/checkpoint
 iter 1500: loss 1.1786, time 2336.37ms, mfu 24.13%
 iter 1510: loss 1.2318, time 13.50ms, mfu 24.48%
 iter 1520: loss 1.2230, time 13.62ms, mfu 24.77%
@@ -237,7 +237,7 @@ iter 1720: loss 1.1782, time 14.24ms, mfu 26.69%
 iter 1730: loss 1.1961, time 14.09ms, mfu 26.66%
 iter 1740: loss 1.1717, time 13.95ms, mfu 26.67%
 step 1750: train loss 1.1045, val loss 1.4716
-saving checkpoint to /home/bohanli/Desktop/NanoGPT/nanoGPT-master/results/shakespeare_char_baseline_20261004/checkpoint
+saving checkpoint to results/shakespeare_char_baseline_20261004/checkpoint
 iter 1750: loss 1.1874, time 2302.96ms, mfu 24.02%
 iter 1760: loss 1.1860, time 14.03ms, mfu 24.27%
 iter 1770: loss 1.1902, time 14.46ms, mfu 24.42%

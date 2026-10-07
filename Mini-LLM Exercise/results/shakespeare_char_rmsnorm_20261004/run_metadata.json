@@ -12,8 +12,8 @@
   "gpu": "NVIDIA GeForce RTX 4090",
   "torch_version": "2.11.0+cu128",
   "baseline_directory": "../shakespeare_char_baseline_20261004",
-  "artifact_directory": "/home/bohanli/Desktop/NanoGPT/nanoGPT-master/Mini-LLM Exercise/results/shakespeare_char_rmsnorm_20261004",
-  "checkpoint_path": "/home/bohanli/Desktop/NanoGPT/nanoGPT-master/Mini-LLM Exercise/results/shakespeare_char_rmsnorm_20261004/checkpoint/ckpt.pt",
+  "artifact_directory": "Mini-LLM Exercise/results/shakespeare_char_rmsnorm_20261004",
+  "checkpoint_path": "Mini-LLM Exercise/results/shakespeare_char_rmsnorm_20261004/checkpoint/ckpt.pt",
   "source_sha256": {
     "model.py": "cf766505c65ad72a112b0ca34a7ad8863fc88b5c5e928e5f9093e237eb1f599b",
     "train.py": "3319631338ece77c8245a62ad6da566792265075aeb4b6241e4c06bdd8c9f24f",
@@ -29,7 +29,7 @@
   "training_exit_code": 0,
   "verified_at": "2026-10-04T18:27:53.353630-07:00",
   "config": {
-    "out_dir": "/home/bohanli/Desktop/NanoGPT/nanoGPT-master/Mini-LLM Exercise/results/shakespeare_char_rmsnorm_20261004/checkpoint",
+    "out_dir": "Mini-LLM Exercise/results/shakespeare_char_rmsnorm_20261004/checkpoint",
     "eval_interval": 250,
     "log_interval": 10,
     "eval_iters": 200,

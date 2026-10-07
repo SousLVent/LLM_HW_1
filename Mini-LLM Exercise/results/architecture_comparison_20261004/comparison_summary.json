@@ -1,0 +1,135 @@
+{
+  "runs": {
+    "baseline": {
+      "best_validation_loss": 1.4716,
+      "best_validation_iteration": 1750,
+      "train_loss_at_best_validation": 1.1045,
+      "final_train_loss": 0.6217,
+      "final_validation_loss": 1.7005,
+      "best_validation_perplexity": 4.356199487279688,
+      "median_logged_iteration_ms": 13.87,
+      "timing_samples": 432,
+      "total_parameters": 10745088,
+      "best_checkpoint_validation_loss_full_precision": 1.471608281135559,
+      "best_validation_delta_vs_baseline": 0.0,
+      "best_validation_change_percent": 0.0,
+      "final_validation_delta_vs_baseline": 0.0,
+      "parameter_change_percent": 0.0
+    },
+    "swiglu": {
+      "best_validation_loss": 1.4941,
+      "best_validation_iteration": 1500,
+      "train_loss_at_best_validation": 1.0944,
+      "final_train_loss": 0.519,
+      "final_validation_loss": 1.8793,
+      "best_validation_perplexity": 4.455324955439878,
+      "median_logged_iteration_ms": 14.31,
+      "timing_samples": 432,
+      "total_parameters": 10745088,
+      "best_checkpoint_validation_loss_full_precision": 1.4940674304962158,
+      "best_validation_delta_vs_baseline": 0.022499999999999964,
+      "best_validation_change_percent": 1.5289480837183993,
+      "final_validation_delta_vs_baseline": 0.17880000000000007,
+      "parameter_change_percent": 0.0
+    },
+    "nope": {
+      "best_validation_loss": 1.5306,
+      "best_validation_iteration": 3000,
+      "train_loss_at_best_validation": 1.1524,
+      "final_train_loss": 1.0837,
+      "final_validation_loss": 1.5918,
+      "best_validation_perplexity": 4.620948559831268,
+      "median_logged_iteration_ms": 13.81,
+      "timing_samples": 432,
+      "total_parameters": 10646784,
+      "best_checkpoint_validation_loss_full_precision": 1.5306158065795898,
+      "best_validation_delta_vs_baseline": 0.05899999999999994,
+      "best_validation_change_percent": 4.009241641750472,
+      "final_validation_delta_vs_baseline": -0.1086999999999998,
+      "parameter_change_percent": -0.9148738474733742
+    },
+    "rope": {
+      "best_validation_loss": 1.4731,
+      "best_validation_iteration": 1750,
+      "train_loss_at_best_validation": 1.0271,
+      "final_train_loss": 0.5449,
+      "final_validation_loss": 1.7317,
+      "best_validation_perplexity": 4.362738689686312,
+      "median_logged_iteration_ms": 14.585,
+      "timing_samples": 432,
+      "total_parameters": 10646784,
+      "best_checkpoint_validation_loss_full_precision": 1.4730876684188843,
+      "best_validation_delta_vs_baseline": 0.0015000000000000568,
+      "best_validation_change_percent": 0.1019298722478973,
+      "final_validation_delta_vs_baseline": 0.031200000000000117,
+      "parameter_change_percent": -0.9148738474733742
+    },
+    "gqa2": {
+      "best_validation_loss": 1.4692,
+      "best_validation_iteration": 2000,
+      "train_loss_at_best_validation": 1.0595,
+      "final_train_loss": 0.6307,
+      "final_validation_loss": 1.6863,
+      "best_validation_perplexity": 4.345757144334075,
+      "median_logged_iteration_ms": 13.41,
+      "timing_samples": 432,
+      "total_parameters": 9860352,
+      "best_checkpoint_validation_loss_full_precision": 1.4691858291625977,
+      "best_validation_delta_vs_baseline": -0.0023999999999999577,
+      "best_validation_change_percent": -0.16308779559662664,
+      "final_validation_delta_vs_baseline": -0.01419999999999999,
+      "parameter_change_percent": -8.23386462726038
+    }
+  },
+  "loss_units": "nats per character",
+  "seed": 1337,
+  "final_iteration": 5000,
+  "evaluations_per_run": 21,
+  "design": "Independent ablations of the original LayerNorm/GELU/learned-position/MHA baseline.",
+  "limitation": "One seed per variant. Architectural changes also change random-number consumption during initialization; minibatch draws are not guaranteed identical.",
+  "timing_method": "Median logged iteration >=500, excluding evaluation iterations; approximate, not a controlled speed benchmark.",
+  "shared_batch_validation": {
+    "window_seed": 20261004,
+    "eval_iters": 200,
+    "batch_size": 64,
+    "block_size": 256,
+    "compile": false,
+    "runs": {
+      "baseline": {
+        "checkpoint_iteration": 1750,
+        "validation_loss": 1.4715090990066528,
+        "perplexity": 4.3558035224161475,
+        "delta_vs_baseline": 0.0,
+        "change_percent_vs_baseline": 0.0
+      },
+      "swiglu": {
+        "checkpoint_iteration": 1500,
+        "validation_loss": 1.4993014335632324,
+        "perplexity": 4.478559406039989,
+        "delta_vs_baseline": 0.02779233455657959,
+        "change_percent_vs_baseline": 1.8886960723070554
+      },
+      "nope": {
+        "checkpoint_iteration": 3000,
+        "validation_loss": 1.5351403951644897,
+        "perplexity": 4.641977195359455,
+        "delta_vs_baseline": 0.06363129615783691,
+        "change_percent_vs_baseline": 4.324220366750803
+      },
+      "rope": {
+        "checkpoint_iteration": 1750,
+        "validation_loss": 1.477927803993225,
+        "perplexity": 4.383852061555641,
+        "delta_vs_baseline": 0.006418704986572266,
+        "change_percent_vs_baseline": 0.43619879692930436
+      },
+      "gqa2": {
+        "checkpoint_iteration": 2000,
+        "validation_loss": 1.474025845527649,
+        "perplexity": 4.366779782215516,
+        "delta_vs_baseline": 0.0025167465209960938,
+        "change_percent_vs_baseline": 0.17103166556666433
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.DS_Store
+.idea
+.ipynb_checkpoints/
+.vscode
+__pycache__/
+*.bin
+*.pkl
+*.pt
+*.pyc
+input.txt
+env/
+venv/
+# Regenerable compilation and document build outputs
+.cache/
+build/
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local publishing helpers and credentials
+.publish-tools/
+github_upload/
+.env
+.env.*

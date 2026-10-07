@@ -1,0 +1,30 @@
+{
+  "layernorm": {
+    "best_validation_loss": 1.4716,
+    "best_validation_iteration": 1750,
+    "train_loss_at_best_validation": 1.1045,
+    "final_train_loss": 0.6217,
+    "final_validation_loss": 1.7005,
+    "best_validation_perplexity": 4.356199487279688,
+    "median_logged_iteration_ms": 13.87,
+    "timing_samples": 432
+  },
+  "rmsnorm": {
+    "best_validation_loss": 1.4638,
+    "best_validation_iteration": 1750,
+    "train_loss_at_best_validation": 1.1024,
+    "final_train_loss": 0.6182,
+    "final_validation_loss": 1.7037,
+    "best_validation_perplexity": 4.322353302997587,
+    "median_logged_iteration_ms": 13.765,
+    "timing_samples": 432
+  },
+  "rmsnorm_minus_layernorm_best_validation_loss": -0.007800000000000029,
+  "best_validation_loss_relative_change_percent": -0.5300353356890479,
+  "loss_units": "nats per character",
+  "seeds": [
+    1337
+  ],
+  "timing_method": "Median logged iterations >=500, excluding evaluation iterations; approximate training-log timings.",
+  "limitation": "One run per normalization type; this does not establish a consistent advantage across seeds."
+}

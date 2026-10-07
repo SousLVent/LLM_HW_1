@@ -1,0 +1,12 @@
+{
+  "evaluation_points": 21,
+  "first_iteration": 0,
+  "final_iteration": 5000,
+  "final_train_loss": 0.6217,
+  "final_validation_loss": 1.7005,
+  "best_validation_iteration": 1750,
+  "best_validation_loss": 1.4716,
+  "loss_units": "nats per character",
+  "source": "train.log",
+  "precision": "Four decimal places, as printed by train.py"
+}

@@ -1,0 +1,37 @@
+{
+  "automated_checks_passed": 15,
+  "run_checks": {
+    "swiglu": {
+      "exit_code": 0,
+      "source_snapshot_verified": true,
+      "checkpoint_verified": true,
+      "evaluation_points": 21,
+      "fixed_validation_batches": 200
+    },
+    "nope": {
+      "exit_code": 0,
+      "source_snapshot_verified": true,
+      "checkpoint_verified": true,
+      "evaluation_points": 21,
+      "fixed_validation_batches": 200
+    },
+    "rope": {
+      "exit_code": 0,
+      "source_snapshot_verified": true,
+      "checkpoint_verified": true,
+      "evaluation_points": 21,
+      "fixed_validation_batches": 200
+    },
+    "gqa2": {
+      "exit_code": 0,
+      "source_snapshot_verified": true,
+      "checkpoint_verified": true,
+      "evaluation_points": 21,
+      "fixed_validation_batches": 200
+    }
+  },
+  "local_links_verified": 68,
+  "plot_visually_inspected": true,
+  "comparison_runs": 5,
+  "loss_rows_per_run": 21
+}

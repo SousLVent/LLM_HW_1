@@ -1,0 +1,12 @@
+# Versions present in the experiment environment (Python 3.12).
+# The recorded GPU build was torch 2.11.0+cu128; select that CUDA build
+# when reproducing training. CPU builds can run the unit checks and plots.
+torch==2.11.0
+numpy==2.4.3
+matplotlib==3.10.9
+requests==2.33.1
+transformers==5.17.0
+datasets==5.0.1
+tiktoken==0.14.0
+wandb==0.30.0
+tqdm==4.67.3
